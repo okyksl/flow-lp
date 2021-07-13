@@ -1,0 +1,6 @@
+_target_: flpert.models.Glow
+num_channels: 512
+num_levels: 3
+num_steps: 32
+in_channels: 3
+coupling_norm: actnorm

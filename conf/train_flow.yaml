@@ -1,0 +1,9 @@
+defaults:
+  - dataset: cifar10
+  - model: glow
+  - pert: clean
+    optional: false
+  - misc: train_misc
+  - hparams: ${defaults.0.dataset}_${defaults.1.model}
+  - override hydra/job_logging: custom
+  - override hydra/output: custom

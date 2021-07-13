@@ -1,0 +1,19 @@
+name: cifar10
+root: data/cifar10/
+download: true
+mean: [0.4914, 0.4822, 0.4465]
+std: [0.2470, 0.2435, 0.2616]
+dim: [3, 32, 32]
+num_workers: 2
+num_classes: 10
+
+train:
+  transform:
+    crop: true
+    flip: true
+    padding: 4
+    affine: 0
+
+val:
+
+test:

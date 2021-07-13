@@ -1,0 +1,19 @@
+name: custom
+root: null
+# avoid standardization by default
+mean: [0.0, 0.0, 0.0]
+std: [1.0, 1.0, 1.0]
+dim: null
+num_workers: 2
+num_classes: null
+
+train:
+  transform:
+    crop: false
+    flip: false
+    padding: 0
+    affine: 0
+
+val:
+
+test:

@@ -1,0 +1,45 @@
+# @package _global_
+dataset:
+  train:
+    use: true
+    transform:
+      pert: true
+
+  val:
+    use: false
+    transform:
+      crop: false
+      flip: false
+      padding: 0
+      affine: 0
+      pert: false
+    split: null
+    seed: 9999
+
+  test:
+    use: true
+    shuffle: false
+    transform:
+      crop: false
+      flip: false
+      padding: 0
+      affine: 0
+      pert: false
+
+eval:
+  freq: 1
+  top:
+    - 1
+
+checkpoint:
+  model: null
+  pert:
+    flow: null
+    conv: null
+
+misc:
+  seed: 0
+  save: true
+  device: cuda:0
+  tensorboard: true
+  eval_freq: 1

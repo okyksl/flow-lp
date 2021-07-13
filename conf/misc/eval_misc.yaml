@@ -1,0 +1,31 @@
+# @package _global_
+dataset:
+  train:
+    use: false
+
+  val:
+    use: false
+
+  test:
+    use: true
+    shuffle: false
+    transform:
+      crop: false
+      flip: false
+      padding: 0
+      affine: 0
+      pert: true
+
+eval:
+  top:
+    - 1
+
+checkpoint:
+  model: null
+  pert:
+    flow: null
+    conv: null
+
+misc:
+  seed: 0
+  device: cuda:0

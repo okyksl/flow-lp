@@ -1,0 +1,16 @@
+_target_: flpert.pert.PGDPert
+num_steps: 1
+epsilon: 0.05
+alpha: 0.05
+random_start: True
+
+ord: inf
+clip: null
+clamp: [0.0, 1.0]
+
+model:
+  conv: auto
+  loss_fn: 
+    _target_: torch.nn.CrossEntropyLoss
+
+ratio: 1.0

@@ -1,0 +1,22 @@
+# @package _global_
+
+dataset:
+  batch_size: 100
+
+model:
+  num_classes: 10
+
+hparams:
+  epochs: 20
+  max_grad_norm: null
+
+  optimizer:
+    _target_: torch.optim.Adam
+    lr: 0.01
+    weight_decay: 0.0001
+
+  scheduler:
+    _target_: flpert.scheduler.ExponentialDecayLR
+    decay_rate: 0.9
+    decay_steps: 500
+    staircase: false

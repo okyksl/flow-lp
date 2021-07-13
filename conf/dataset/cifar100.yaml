@@ -1,0 +1,19 @@
+name: cifar100
+root: data/cifar100/
+download: true
+mean: [0.5071, 0.4867, 0.4408]
+std: [0.2675, 0.2565, 0.2761]
+dim: [3, 32, 32]
+num_workers: 2
+num_classes: 100
+
+train:
+  transform:
+    crop: true
+    flip: true
+    padding: 4
+    affine: 0
+
+val:
+
+test:

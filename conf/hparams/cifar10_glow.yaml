@@ -1,0 +1,21 @@
+# @package _global_
+
+dataset:
+  batch_size: 64
+
+hparams:
+  epochs: 250
+  max_grad_norm: null
+
+  optimizer:
+      _target_: torch.optim.Adamax
+      lr: 0.0005
+      weight_decay: 0.00005
+
+  scheduler:
+    _target_: flpert.scheduler.WarmupLR
+    warmup_steps: 500000
+
+misc:
+  sample_epoch_frequency: 10
+  sample_temperature: [0.5, 0.75, 0.9, 1.0]

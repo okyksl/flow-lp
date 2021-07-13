@@ -1,0 +1,23 @@
+# @package _global_
+
+dataset:
+  batch_size: 128
+
+model:
+  num_classes: 10
+
+hparams:
+  epochs: 200
+  max_grad_norm: null
+
+  optimizer:
+      _target_: torch.optim.SGD
+      lr: 0.1
+      weight_decay: 5e-4
+      momentum: 0.9
+      nesterov: true
+
+  scheduler:
+    _target_: torch.optim.lr_scheduler.MultiStepLR
+    milestones: [60, 120, 160]
+    gamma: 0.2

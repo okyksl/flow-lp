@@ -1,0 +1,19 @@
+name: svhn
+root: data/svhn/
+download: true
+mean: [0.4376821, 0.4437697, 0.47280442]
+std: [0.19803012, 0.20101562, 0.19703614]
+dim: [3, 32, 32]
+num_workers: 2
+num_classes: 10
+
+train:
+  transform:
+    crop: false
+    flip: false
+    padding: 0
+    affine: 0.1
+  
+val:
+
+test:

@@ -1,0 +1,2 @@
+_target_: flpert.models.ResNet20
+standardize: true

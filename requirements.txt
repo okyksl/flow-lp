@@ -1,0 +1,9 @@
+numpy
+scipy
+torch>=1.7
+torchvision
+tensorboard
+hydra-core
+tqdm
+matplotlib
+seaborn

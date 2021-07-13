@@ -1,0 +1,1 @@
+from flpert.models.vaegan.standard import Classifier as Standard

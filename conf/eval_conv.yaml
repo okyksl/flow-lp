@@ -1,0 +1,8 @@
+defaults:
+  - dataset: cifar10
+  - model: resnet18
+  - pert: clean
+  - misc: eval_misc
+  - hparams: ${defaults.0.dataset}_${defaults.1.model}
+  - override hydra/job_logging: custom
+  - override hydra/output: custom

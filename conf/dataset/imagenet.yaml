@@ -1,0 +1,19 @@
+name: imagenet-32
+root: data/imagenet-32/
+download: false
+mean: [0.4811, 0.4574, 0.4078]  # [122.67558338, 116.65045327, 103.99774782]
+std: [0.2605, 0.2533, 0.2683] # [66.43395512, 64.59828883, 68.41934072]
+dim: [3, 32, 32]
+num_workers: 2
+num_classes: 1000
+
+train:
+  transform:
+    crop: true
+    flip: true
+    padding: 4
+    affine: 0
+
+val:
+
+test:

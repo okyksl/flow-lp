@@ -1,0 +1,27 @@
+# @package _global_
+
+dataset:
+  batch_size: 256
+
+model:
+  num_steps: 12
+  num_levels: 1
+  in_channels: 1
+  num_channels: 512
+  flatten: false
+
+hparams:
+  epochs: 100
+  max_grad_norm: 1.0
+
+  optimizer:
+      _target_: torch.optim.Adam
+      lr: 0.001
+
+  scheduler:
+    _target_: flpert.scheduler.WarmupLR
+    warmup_steps: 300000
+
+misc:
+  sample_epoch_frequency: 5
+  sample_temperature: [0.5, 0.6, 0.8, 1.0]

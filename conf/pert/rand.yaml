@@ -1,0 +1,11 @@
+_target_: flpert.pert.FlowRandPert
+epsilon: 0.20
+
+ord: null
+clip: null
+clamp: [0.0, 1.0]
+
+model:
+  flow: auto
+
+ratio: 1.0

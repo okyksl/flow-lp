@@ -1,0 +1,19 @@
+name: fmnist
+root: data/fmnist/
+download: true
+mean: [0.1307]
+std: [0.3081]
+dim: [1, 28, 28]
+num_workers: 2
+num_classes: 10
+
+train:
+  transform:
+    crop: false
+    flip: false
+    padding: 0
+    affine: 0
+
+val:
+
+test:

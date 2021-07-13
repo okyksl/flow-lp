@@ -1,0 +1,11 @@
+_target_: flpert.pert.FlowAwayPert
+epsilon: 0.15
+
+ord: null
+clip: null
+clamp: [0.0, 1.0]
+
+model:
+  flow: auto
+
+ratio: 1.0
